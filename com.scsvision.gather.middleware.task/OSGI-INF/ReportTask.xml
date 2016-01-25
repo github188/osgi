@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="active" deactivate="deactive" immediate="false" name="ReportTask">
+   <implementation class="com.scsvision.gather.middleware.task.ReportTask"/>
+   <reference name="DataService" interface="com.scsvision.gather.middleware.data.service.DataService" bind="setDataService" unbind="unsetDataService" policy="dynamic" cardinality="1..n" />
+   <service>
+      <provide interface="org.eclipse.osgi.framework.console.CommandProvider"/>
+      <provide interface="com.scsvision.gather.middleware.task.IReportTask"/>
+   </service>
+</scr:component>

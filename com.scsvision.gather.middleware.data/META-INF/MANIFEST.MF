@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Middleware-data
+Bundle-SymbolicName: com.scsvision.gather.middleware.data
+Bundle-Version: 1.0.0
+Bundle-Vendor: SCSVISION
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.scsvision.gather.middleware.data.model,
+ com.scsvision.gather.middleware.data.service
+Service-Component: OSGI-INF/component.xml
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="Application">
+   <implementation class="com.scsvision.gather.middleware.application.Application"/>
+   <reference bind="setExtractTask" cardinality="0..1" interface="com.scsvision.gather.middleware.task.IExtractTask" name="IExtractTask" policy="dynamic" unbind="unsetExtractTask"/>
+   <reference bind="setReportTask" cardinality="0..1" interface="com.scsvision.gather.middleware.task.IReportTask" name="IReportTask" policy="dynamic" unbind="unsetReportTask"/>
+   <service>
+      <provide interface="org.eclipse.osgi.framework.console.CommandInterpreter"/>
+   </service>
+</scr:component>

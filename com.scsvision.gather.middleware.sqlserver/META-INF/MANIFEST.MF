@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Middleware-sqlserver
+Bundle-SymbolicName: com.scsvision.gather.middleware.sqlserver
+Bundle-Version: 1.0.0
+Bundle-Vendor: SCSVISION
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.scsvision.gather.middleware.sqlserver.dao,
+ com.scsvision.gather.middleware.sqlserver.dao.model
+Service-Component: OSGI-INF/component.xml
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.apache.commons.lang;bundle-version="2.6.0"

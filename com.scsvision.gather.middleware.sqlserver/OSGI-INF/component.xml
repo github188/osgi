@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="false" name="vdDAO">
+   <implementation class="com.scsvision.gather.middleware.sqlserver.dao.impl.VehicleDetectorDAOImpl"/>
+   <service>
+      <provide interface="com.scsvision.gather.middleware.sqlserver.dao.VehicleDetectorDAO"/>
+   </service>
+</scr:component>
